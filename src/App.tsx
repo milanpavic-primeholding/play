@@ -7,7 +7,7 @@ import PostPage from './pages/post-page/PostPage';
 import ErrorPage from './pages/error-page/ErrorPage';
 // import { bindActionCreators } from 'redux';
 
-const App = () => {
+const App: React.FC = () => {
   const account = useSelector((state: RootState) => state.account);
   const dispatch = useDispatch();
   const store = useStore();
@@ -24,7 +24,7 @@ const App = () => {
     <Router>
       <div className="App">
         <Link to={'/post/1'}>Post</Link>
-        <h1>{account}</h1>
+        <h1>learn react:{account}</h1>
         <button onClick={() => dispatch(depositMoney(1000))}>Deposit</button>
         <button onClick={() => dispatch(withdrawMoney(1000))}>WithDraw</button>
       </div>

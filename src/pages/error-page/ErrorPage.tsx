@@ -1,5 +1,5 @@
 import React from 'react';
 
-const ErrorPage = () => <div>Not found</div>;
+const ErrorPage: React.FC = () => <div>Not found</div>;
 
 export default ErrorPage;
