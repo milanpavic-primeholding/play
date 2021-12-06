@@ -1,10 +1,10 @@
-import { createStore, combineReducers, applyMiddleware } from "redux";
-import thunk from "redux-thunk";
-import { composeWithDevTools } from "redux-devtools-extension";
-import accountReducer from "../reducers/accountReducer";
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import accountReducer from '../reducers/accountReducer';
 
 const reducer = combineReducers({
-  account: accountReducer,
+  account: accountReducer
 });
 
 const middleware = [thunk];

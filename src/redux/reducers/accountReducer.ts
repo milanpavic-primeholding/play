@@ -1,11 +1,8 @@
-import accountTypes from "../actionTypes/accountTypes";
+import accountTypes from '../actionTypes/accountTypes';
 
 const initialState = 0;
 
-const accountReducer = (
-  state = initialState,
-  action: { payload: any; type: string }
-) => {
+const accountReducer = (state = initialState, action: { payload: any; type: string }) => {
   switch (action.type) {
     case accountTypes.DEPOSIT:
       return state + action.payload;
