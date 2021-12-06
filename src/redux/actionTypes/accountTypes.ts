@@ -1,6 +1,5 @@
-const accountTypes = {
-  DEPOSIT: 'DEPOSIT',
-  WITHDRAW: 'WITHDRAW'
-};
-
-export default accountTypes;
+export enum accountTypes {
+  DEPOSIT = 'DEPOSIT',
+  WITHDRAW = 'WITHDRAW',
+  BANKRUPT = 'BANKRUPT'
+}
